@@ -1,0 +1,85 @@
+# -----------------------------
+# Python basics
+# -----------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Byte-compiled / optimized / DLL files
+*.so
+*.pyd
+*.dll
+
+# -----------------------------
+# Virtual environments
+# -----------------------------
+.venv/
+venv/
+env/
+env*/
+# (keep whichever you used, e.g. env312/)
+
+# -----------------------------
+# Django
+# -----------------------------
+*.log
+local_settings.py
+
+# Collected static (run-time output)
+staticfiles/
+static_root/
+static/
+# (keep your app static/ if you actually track it; usually only collected static is ignored)
+
+# Media uploads: ignore everything...
+media/**
+# ...but keep the avatars folder path and the default avatar file
+!media/avatars/
+media/avatars/**
+!media/avatars/default.png
+
+# SQLite (dev-only DBs)
+*.sqlite3
+
+# -----------------------------
+# Environment & secrets
+# -----------------------------
+.env
+.env.*
+!.env.example   # track a template for teammates
+
+# -----------------------------
+# Testing / coverage
+# -----------------------------
+.pytest_cache/
+.coverage
+.coverage.*
+coverage.xml
+htmlcov/
+
+# Type checking / linters caches
+.mypy_cache/
+.ruff_cache/
+.pyre/
+.pytype/
+
+# -----------------------------
+# Editors / IDE
+# -----------------------------
+.vscode/
+.idea/
+*.code-workspace
+
+# -----------------------------
+# OS files
+# -----------------------------
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# -----------------------------
+# Node / build (if present)
+# -----------------------------
+node_modules/
+dist/
+build/
