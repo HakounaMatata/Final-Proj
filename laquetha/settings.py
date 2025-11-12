@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-iqngxgll6s8!bi5blh%3ax(wfd==%&!i(og+krbao3udbtza@l
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['web-production-a3a2d.up.railway.app', '127.0.0.1', 'localhost']
 
 
 # Application definition
@@ -57,7 +57,8 @@ DATABASES = {
         'PASSWORD': os.environ.get('DB_PASSWORD'),
         'HOST': os.environ.get('DB_HOST'),
         'PORT': os.environ.get('DB_PORT', '5432'),
-        'OPTIONS': {'sslmode': os.environ.get('DB_SSLMODE', 'require')},
+        'OPTIONS': {'sslmode': os.environ.get('DB_SSLMODE', 'require')}
+
     }
 }
 
